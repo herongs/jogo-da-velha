@@ -20,6 +20,32 @@ h1{
 
 }
 
+.o{
+    position: relative;
+}
+
 .o::after{
-    content: "o";
+    position: absolute;
+    content: "\1F4AA";
+    font-size: 50px;
+    line-height: 150px;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.x{
+    position: relative;
+}
+
+.x::after{
+    position: absolute;
+    content: "\1F9E0";
+    font-size: 50px;
+    line-height: 150px;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
 }
