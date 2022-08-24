@@ -1,17 +1,20 @@
-function handleClick(event){
-
-    console.log(event.target);
-}
-
 
 document.addEventListener('DOMContentLoaded', ()=>{
 
     let squares = document.querySelectorAll(".square");
 
     squares.forEach((square)=>{
-        squares.addEventListener('click',handleClick);
+        square.addEventListener('click',handleClick);
 
     })
 
 })
 
+function handleClick(event){
+
+    let square = event.target;
+    let position = square.id;
+
+    handleMove{position}
+    updateSquares();
+}
