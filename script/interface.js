@@ -8,13 +8,31 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
     })
 
-})
+});
 
 function handleClick(event){
 
     let square = event.target;
     let position = square.id;
 
-    handleMove{position}
+    handleMove(position);
     updateSquares();
-}
+};
+
+function updateSquares(){
+
+    let squares = document.querySelectorAll(".square");
+
+    squares.forEach((square)=>{
+            let position = square.id;
+            let symbols = board[position];
+
+
+            if (symbols != ''){
+                square.innerHTML = `<div class ='${symbols}'></div>`
+            }
+    })
+}     
+
+
+
